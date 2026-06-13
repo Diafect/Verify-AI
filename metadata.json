@@ -1,0 +1,6 @@
+{
+  "name": "AI Fact Verification Assistant",
+  "description": "A powerful full-stack fact-checking tool that queries real fact-check databases and uses Gemini AI with Search Grounding to verify claims, rate sources, and explain why information is true or false.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
