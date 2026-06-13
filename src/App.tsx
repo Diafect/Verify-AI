@@ -355,6 +355,18 @@ export default function App() {
             {result && !loading && (
               <div className="space-y-8 animate-[fadeIn_0.5s_ease-out]">
                 
+                {result.isSimulated && (
+                  <div className="p-4 bg-amber-950/20 border border-amber-900/40 rounded-sm flex items-start gap-3.5 text-left shadow-lg">
+                    <Sparkles className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
+                    <div className="space-y-1">
+                      <h4 className="text-xs font-bold text-white uppercase font-mono tracking-wider">Veritas Intel Sandbox Active</h4>
+                      <p className="text-xs text-zinc-400 leading-relaxed">
+                        To maintain full system availability independent of rate limits or depleted prepayment credits, the system has loaded its offline fact-check database & heuristic synthesis fallback. The app remains fully functional.
+                      </p>
+                    </div>
+                  </div>
+                )}
+                
                 {/* Header overview blocks */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   
